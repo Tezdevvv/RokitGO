@@ -1,0 +1,72 @@
+.txtContentData {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.txtContentData h2 {
+    font-size: 5vh;
+}
+
+.simple-bar-chart {
+    --line-count: 10;
+    --line-color: currentcolor;
+    --line-opacity: 0.25;
+    --item-gap: 1rem;
+    --item-default-color: #060606;
+
+    width: 80%; /* Sesuaikan lebar container di sini, misal 80% dari layar */
+    max-width: 600px; /* Tambahkan batas maksimum agar tidak terlalu lebar di layar besar */
+    margin: 0 auto; /* Pusatkan container */
+    display: grid;
+    gap: var(--item-gap);
+    padding-block: var(--item-gap);
+    padding-inline: 1.5rem; /* Ruang untuk label dan nilai */
+    position: relative;
+}
+
+.simple-bar-chart::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: repeating-linear-gradient(
+        to right,
+        transparent 0 calc(100% / var(--line-count) - 1px),
+        var(--line-color) 1px calc(100% / var(--line-count))
+    );
+    opacity: var(--line-opacity);
+}
+
+/* Konfigurasi bar tetap sama */
+.simple-bar-chart > .item {
+    display: flex;
+    align-items: center;
+    height: 1.5rem;
+    width: calc(var(--val) * 0.5%);
+    background-color: var(--clr, var(--item-default-color));
+    animation: growWidth 1s ease forwards;
+}
+
+@keyframes growWidth {
+    from {
+        width: 0;
+    }
+    to {
+        width: calc(var(--val) * 0.5%);
+    }
+}
+
+.simple-bar-chart > .item > .label {
+    margin-right: 0.5rem;
+}
+
+.simple-bar-chart > .item > .value {
+    margin-left: auto;
+    padding-left: 0.5rem;
+}

@@ -1,0 +1,297 @@
+.content {
+    display: none;
+    /* background-color: aquamarine; */
+}
+
+.active {
+    display: block;
+}
+
+.production {
+    /* background-color: aqua; */
+}
+
+.chooseProduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw 5vw;
+    color: rgb(0, 0, 0);
+}
+
+.chooseProduction h3 {
+    cursor: pointer;
+    user-select: none;
+}
+
+.colorBlack {
+    color: rgb(255, 255, 255);
+    background-color: rgb(9,83,42);
+    height: 7vh;
+    width: 13vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8vw;
+    -webkit-border-radius: 0.8vw;
+    -moz-border-radius: 0.8vw;
+    -ms-border-radius: 0.8vw;
+    -o-border-radius: 0.8vw;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.colorNan {
+
+}
+
+.contentNews {
+    /* background-color: aqua; */
+    height: 100%;
+    color: rgba(215,929,111,55);
+}
+
+.aboutRokit {
+    /* background-color: rgb(0, 0, 0); */
+    height: 60vh;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+    margin-right: 20vw;
+}
+
+.txtCom {
+    /* background-color: aqua; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-bottom: 10vh;
+}
+
+.txtCom h2 {
+    font-size: 2.5vh;
+}
+
+.informasiRokit {
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.iRR {
+    background-color: rgb(231,227,211);
+    width: 50%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0vh 2vw;
+}
+
+.iRR h2 {
+    font-size: 5vh;
+    color: black;
+    font-weight: bold;
+}
+
+.iRR p {
+    font-size: 1.5vh;
+    color: rgb(0, 0, 0);
+}
+
+.iRL {
+    /* background-color: rgb(112, 155, 43); */
+    width: 50%;
+    height: 100%; 
+}
+
+.iRL img{
+    /* background-color: aqua; */
+    height: 50vh;
+    position: relative;
+    left: 5vw;
+}
+
+.bgImgRokit {
+    background-color: rgb(231,227,211);
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+}
+
+.composition {
+    /* background-color:antiquewhite; */
+    display: flex;
+    height: 100%;
+    /* padding: 5vw 0vw; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.itemComposition {
+    /* background-color: aquamarine; */
+    width: 50vw;
+}
+
+.itemInformation {
+    background-color: rgb(255, 255, 255);
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    padding-left: 20vw;
+}
+
+.itemInformation h2{
+    /* background-color: blue; */
+    font-size: 4vh;
+}
+
+.itemInformation .imgItemR{
+    margin-top: 3vh;
+    /* margin-bottom: 2vh; */
+    /* background-color: rgb(208, 255, 0); */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 15vw;
+}
+
+.imgItemR img {
+    /* background-color: aqua; */
+    height: 55vh;
+}
+
+.itemInformation h2{
+    /* background-color: blue; */
+    font-size: 6vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+}
+
+.itemInformation p {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-weight: bold;
+    color: white;
+}
+
+.bgInfo {
+    /* background-color: aqua; */
+    width: 80%;
+    position: relative;
+    left: 5vw;
+    height: 60vh;
+}
+
+.itemNone {
+    display: none;
+}
+
+.itemActive {
+    display: block;
+}
+
+.kacangKoro {
+    background-color: rgb(139,199,66);
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.daunKelor {
+    background-color: rgb(139,199,66);
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.daunKelor img {
+    position: relative;
+    left: 5vw;
+}
+
+.hatiAyam {
+    background-color: rgb(139,199,66);
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.beras {
+    background-color: rgb(139,199,66);
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.imgItem {
+    /* background-color: aqua; */
+    cursor: pointer;
+    user-select: none;
+    padding: 10vh 0vw;
+    padding-right: 2vw;
+}
+
+.imgItem img{
+    height: 15vh;
+}
+
+.imgKK {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgDK {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgHA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemChoose {
+    background-color: rgb(0, 0, 0);
+    border-top-right-radius: 4vw;
+    border-top-left-radius: 4vw;
+    border-bottom-left-radius: 4vw;
+    /* border-top-left-radius: 2vw; */
+    height: 20vh;
+    margin-left: 5vw;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+    /* margin: 5vh 0vw; */
+}
+
+.itemNoChoose {
+    /* background-color: white; */
+    height: 20vh;
+}

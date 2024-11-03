@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rokit GO</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="distribution.css">
+    <link rel="stylesheet" href="chart.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Rokit GO</li>
+                <li>Icon Search</li>
+            </ul>
+        </nav>
+        <div class="pageTop">
+            <div class="brand">
+                <div class="txtBrand">
+                    <h1>Healthy Food<br>Rokit GO</h1>
+                </div>
+            </div>
+            <div class="imgCookies">
+                <img>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Kandungan -->
+        <section>
+
+        </section>
+
+        <!-- product distribution -->
+        <section class="production">
+            <div class="chooseProduction">
+                <h3 id="cp1" class="optionNews colorNan colorBlack" onclick="showContent('contentNews'); colorChoose('cp1');">Education</h3>
+                <h3 id="cp2" class="optionContact colorNan" onclick="showContent('contentContact'); colorChoose('cp2');">Production</h3>
+                <h3 id="cp3" class="optionDistribution colorNan" onclick="showContent('contentDistribution'); colorChoose('cp3');">Distribution</h3>
+                <h3 id="cp4" class="optionData colorNan" onclick="showContent('contentData'); colorChoose('cp4');">Data</h3>
+            </div>
+        
+            <!-- Konten yang akan ditampilkan berdasarkan pilihan -->
+            <!-- <div id="contentNews" class="content active">Ini adalah konten untuk Education</div>
+            <div id="contentContact" class="content">Ini adalah konten untuk Contact Production</div>
+            <div id="contentDistribution" class="content">Ini adalah konten untuk Distribution</div>
+            <div id="contentData" class="content">Ini adalah konten untuk Data Stunting</div> -->
+
+            <div id="contentNews" class="content active">
+                <div class="contentNews">
+                    <div class="aboutRokit">
+                        <div class="informasiRokit">
+                            <div class="iRR">
+                                <div>
+                                    <h2>Apa itu Rokit?</h2>
+                                    <p>ROKIT adalah kraker bernutrisi dengan bahan utama kacang koro serta bahan yang lain seperti daun kelor, hati ayam, dan nasi. ROKIT berbentuk bulat pipih dan berwarna cokelat, serta memiliki tekstur krispi dan kering. Produk ini mempunyai rasa yang gurih dan lezat, Kombinasi bahan-bahan ini menjadikan ROKIT sebagai kraker bernutrisi lengkap, cocok untuk mendukung kebutuhan gizi sehari-hari, terutama bagi mereka yang memerlukan asupan zat besi dan protein yang lebih tinggi.</p>
+                                </div>
+                            </div>
+                            <div class="iRL">
+                                <div class="bgImgRokit">
+                                    <img src="img/rokit.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txtCom">
+                        <h2><i class="fas fa-search"></i>  Komposisi Utama Rokit</h2>
+                    </div>
+                    <div class="composition">
+                        <div class="itemComposition">
+                            <div class="imgItem">
+                                <div id="item1" class="imgKK itemNoChoose itemChoose" onclick="showItem('itemKK'); chooseItem('item1');">
+                                    <img src="img/kacangKoro.png">
+                                </div>
+                                <div id="item2" class="imgDK itemNoChoose" onclick="showItem('itemDK'); chooseItem('item2');">
+                                    <img src="img/daunKelor.png">
+                                </div>
+                                <div id="item3" class="imgHA itemNoChoose" onclick="showItem('itemHA'); chooseItem('item3');">
+                                    <img src="img/hatiAyam.png">
+                                </div>
+                                <div id="item4" class="imgB itemNoChoose" onclick="showItem('itemB'); chooseItem('item4');">
+                                    <img src="img/beras.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemInformation">
+                            <div id="itemKK" class="kacangKoro itemNone itemActive">
+                                <div class="imgItemR">
+                                    <img alt="Kacang Koro" src="img/kacangKoro.png">
+                                </div>
+                                <div class="bgInfo">
+                                    <h2>Kacang Koro</h2>
+                                    <p>Sebanyak 50 gram kacang koro mengandung nilai gizi yang sangat baik, antara lain zat besi sebesar 24,9%, energi sebesar 479 kkal, protein sebanyak 26 gram, lemak 21,82 gram,  karbohidrat 76,66 gram, serta kalsium 59,70 mg. Kandungan zat besi yang tinggi pada kacang koro ini bermanfaat untuk mencegah dan mengatasi masalah stunting yang kerap dialami oleh balita serta ibu hamil atau menyusui serta mengatasi masalah anemia. </p>
+                                </div>
+                            </div>
+                            <div id="itemDK" class="daunKelor itemNone">
+                                <div class="imgItemR">
+                                    <img alt="Daun Kelor" src="img/daunKelor.png">
+                                </div>
+                                <div class="bgInfo">
+                                    <h2>Daun Kelor</h2>
+                                    <p>Daun kelor (Moringa oleifera) dikenal sebagai tanaman dengan kandungan nutrisi yang kaya dan beragam manfaat bagi kesehatan terutama dalam mendukung upaya mengatasi masalah stunting dan anemia. Berdasarkan kandungan nutrisi, daun kelor mengandung protein sebesar 28,44%, lemak 2,74%, karbohidrat 57,01%, serat 12,63%, dan kalsium 1600–2200 mg. Kandungan kalsium yang tinggi dalam daun kelor sangat bermanfaat bagi balita yang sedang dalam masa pertumbuhan karena kalsium merupakan komponen esensial dalam perkembangan tulang dan gigi yang kuat.</p>
+                                </div>
+                            </div>
+                            <div id="itemHA" class="hatiAyam itemNone">
+                                <div class="imgItemR">
+                                    <img alt="Hati Ayam" src="img/hatiAyam.png">
+                                </div>
+                                <div class="bgInfo">
+                                    <h2>Hati Ayam</h2>
+                                    <p>Dalam setiap 100 gram hati ayam, terkandung protein sebanyak 27,4 gram, jumlah yang sepuluh kali lebih tinggi dibandingkan dengan kandungan protein pada daging ayam itu sendiri. Selain itu, hati ayam juga merupakan sumber kaya vitamin B; mengandung 16,6 mikrogram vitamin B12, 0,9 miligram vitamin B6, dan 0,36 miligram vitamin B1. Berkat kandungan vitamin dan mineral yang begitu lengkap ini, hati ayam menjadi pilihan yang sangat baik untuk memenuhi kebutuhan nutrisi tubuh terutama bagi kelompok yang rentan terhadap defisiensi nutrisi, seperti balita dan ibu hamil.</p>
+                                </div>
+                            </div>
+                            <div id="itemB" class="beras itemNone">
+                                <div class="imgItemR">
+                                    <img alt="Beras" src="img/beras.png">
+                                </div>
+                                <div class="bgInfo">
+                                    <h2>Beras</h2>
+                                    <p>Beras mengandung zat besi (Fe) dan seng (Zn), yang merupakan zat gizi mikro esensial bagi kesehatan manusia terutama bagi balita dan ibu hamil. Kekurangan zat besi dan seng dapat mengakibatkan berbagai masalah kesehatan termasuk anemia dan stunting yang umum terjadi di negara-negara Asia Selatan akibat defisiensi mikronutrien. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contentContact" class="content">
+                <div class="contentContact">
+                    <div class="itemContact">
+                        <div class="contact">
+                            <div class="nameContact">Risa</div>
+                            <div class="numContact">+62 821-4105-0915</div>
+                            <div class="infoContact">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, error in dolor nam inventore consectetur aspernatur facere voluptatibus nesciunt natus officiis quis, exercitationem deleniti temporibus corrupti magnam sunt optio excepturi.</div>
+                            <div style="display: flex; justify-content: end; align-items: center;">
+                                <button class="btnContact" onclick="sendMessageToWhatsapp()">Hubungi</button>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <div class="nameContact">Zuke</div>
+                            <div class="numContact">+62 812-3308-5801</div>
+                            <div class="infoContact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod amet debitis delectus saepe at blanditiis cumque repellat itaque iure, corporis numquam ut unde quidem error nobis! Sequi, deserunt vero. Recusandae.</div>
+                            <div style="display: flex; justify-content: end; align-items: center;">
+                                <button class="btnContact">Hubungi</button>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <div class="nameContact">Tasya</div>
+                            <div class="numContact">+62 857-9119-0912</div>
+                            <div class="infoContact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, repudiandae, assumenda molestiae vero animi necessitatibus accusamus culpa, voluptate distinctio ea quasi temporibus minus ducimus! Doloremque perferendis odio inventore voluptate debitis.</div>
+                            <div style="display: flex; justify-content: end; align-items: center;">
+                                <button class="btnContact">Hubungi</button>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <div class="nameContact">Pira</div>
+                            <div class="numContact">+62 895-2548-1029</div>
+                            <div class="infoContact">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus expedita ipsum nihil eveniet sed unde ullam? Dignissimos repellat voluptatem modi quae deserunt eaque odit sed quod, numquam officiis dolore nemo.</div>
+                            <div style="display: flex; justify-content: end; align-items: center;">
+                                <button class="btnContact">Hubungi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contentDistribution" class="content">
+                <div class="table-wrapper">
+                    <table class="fl-table">
+                        <thead>
+                        <tr>
+                            <th>Golongan 1<br>(1 x seminggu)</th>
+                            <th>Golongan 2<br>(1 x 2 seminggu)</th>
+                            <th>Golongan 3<br>(1 x 3 seminggu)</th>
+                            <th>Golongan 4<br>(1 x 4 seminggu)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Sawahan</td>
+                            <td>Ngronggot</td>
+                            <td>Berbek</td>
+                            <td>Bagor</td>
+                        </tr>
+                        <tr>
+                            <td>Wilangan</td>
+                            <td>Loceret</td>
+                            <td>Baron</td>
+                            <td>Pace</td>
+                        </tr>
+                        <tr>
+                            <td>Ngluyu</td>
+                            <td>Prambon</td>
+                            <td>Tanjunganom</td>
+                            <td>Rejoso</td>
+                        </tr>
+                        <tr>
+                            <td>Ngetos</td>
+                            <td>Gondang</td>
+                            <td>Jatikalen</td>
+                            <td>Nganjuk</td>
+                        </tr>
+                        <tr>
+                            <td>Lengkong</td>
+                            <td>Patianrowo</td>
+                            <td>Kertosono</td>
+                            <td>Sukomoro</td>
+                        </tr>
+                        <tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="contentData" class="content">
+                <div class="txtContentData">
+                    <h2>
+                        Data Stunting di Nganjuk
+                    </h2>
+                </div>
+                <div class="simple-bar-chart">
+                  
+                  <div class="item" style="--clr: #e7e3d3; --val: 20.4">
+                    <div class="label">Sawahan</div>
+                    <div class="value">20.4%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #8bc742; --val: 18.5">
+                    <div class="label">Wilangan</div>
+                    <div class="value">18.5%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #09532a; --val: 16.9">
+                    <div class="label">Ngluyu</div>
+                    <div class="value">16.9%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #e7e3d3; --val: 14.8">
+                    <div class="label">Ngetos</div>
+                    <div class="value">14.8%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #8bc742; --val: 10.1">
+                    <div class="label">Lengkong</div>
+                    <div class="value">10.1%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #09532a; --val: 9.37">
+                    <div class="label">Ngronggot</div>
+                    <div class="value">9.37%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #e7e3d3; --val: 9.31">
+                    <div class="label">Loceret</div>
+                    <div class="value">9.31%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #8bc742; --val: 9.20">
+                    <div class="label">Prambon</div>
+                    <div class="value">9.20%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #09532a; --val: 9.20">
+                    <div class="label">Gondang</div>
+                    <div class="value">9.20%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #e7e3d3; --val: 9.10">
+                    <div class="label">Patianrowo</div>
+                    <div class="value">9.10%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #8bc742; --val: 8.84">
+                    <div class="label">Berbek</div>
+                    <div class="value">8.84%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #09532a; --val: 8.75">
+                    <div class="label">Baron</div>
+                    <div class="value">8.75%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #e7e3d3; --val: 8.70">
+                    <div class="label">Tanjunganom</div>
+                    <div class="value">8.70%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #8bc742; --val: 8.45">
+                    <div class="label">Jatikalen</div>
+                    <div class="value">8.45%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #09532a; --val: 8.20">
+                    <div class="label">Kertosono</div>
+                    <div class="value">8.20%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #e7e3d3; --val: 7.30">
+                    <div class="label">Bagor</div>
+                    <div class="value">7.30%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #8bc742; --val: 6.79">
+                    <div class="label">Pace</div>
+                    <div class="value">6.79%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #09532a; --val: 6.70">
+                    <div class="label">Rejoso</div>
+                    <div class="value">6.70%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #e7e3d3; --val: 6.37">
+                    <div class="label">Nganjuk</div>
+                    <div class="value">6.37%</div>
+                  </div>
+                  
+                  <div class="item" style="--clr: #8bc742; --val: 6.30">
+                    <div class="label">Sukomoro</div>
+                    <div class="value">6.30%</div>
+                  </div>
+                  
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-07">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <h2 class="footer-heading"><a href="#" class="logo">Rokit GO.</a></h2>
+                    <ul class="ftco-footer-social p-0">
+          <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
+          <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a></li>
+          <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="ion-logo-instagram"></span></a></li>
+        </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Terimakasih. Website ini dibuat dengan cinta <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">@Tezdevvv</a>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- <footer>
+        <div class="support">
+            <div class="sT">
+                <div class="sR">
+                    <div>
+                        <p>@instagram</p>
+                        <p>@GitHub</p>
+                    </div>
+                </div>
+                <div class="sL">
+                    <div>
+                        <p>Terimakasih atas dukungan, masukan anda akan kami terima</p>
+                        <p>Kontak Feedback</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sB">
+                <h2></h2>
+                <p></p>
+            </div>
+        </div>
+    </footer> -->
+
+</body>
+</html>
